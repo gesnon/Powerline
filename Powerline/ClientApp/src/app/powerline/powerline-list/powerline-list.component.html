@@ -1,0 +1,16 @@
+<table class='table table-striped' aria-labelledby="tableLabel">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>ContractPIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let powerline of powerlines">
+      <td>{{ powerline.id }}</td>
+      <td>{{ powerline.name }}</td>
+      <td><a [routerLink] ="['/contractPIRForm',powerline.contractPIR.id]"> {{ powerline.contractPIR.name }}</a></td>
+    </tr>
+  </tbody>
+</table>

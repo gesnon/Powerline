@@ -1,0 +1,16 @@
+<table class='table table-striped' aria-labelledby="tableLabel">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>DateOfFinish</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contractPIR of contractPIRs">
+      <td>{{ contractPIR.id }}</td>
+      <td>{{ contractPIR.name }}</td>
+      <td>{{ contractPIR.dateOfFinish.toLocaleDateString("ru-Ru") }}</td>
+    </tr>
+  </tbody>
+</table>

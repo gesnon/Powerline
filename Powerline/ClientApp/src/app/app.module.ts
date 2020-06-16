@@ -13,6 +13,7 @@ import { PowerlineListComponent } from './powerline/powerline-list/powerline-lis
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ContractPIRListComponent } from './conrtactPIR/contractPIR-list/contractPIR-list.component';
 import { ContractPIRFormComponent } from './conrtactPIR/contractPIR-form/contractPIR-form.component';
+import { PowerlineService } from './powerline/powerline.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { ContractPIRFormComponent } from './conrtactPIR/contractPIR-form/contrac
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
-  providers: [],
+  providers: [PowerlineService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

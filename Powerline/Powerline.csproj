@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,7 +29,12 @@
     <None Remove="ClientApp\src\app\conrtactPIR\contractPIR-list\contractPIR-list.component.ts" />
     <None Remove="ClientApp\src\app\conrtactPIR\contractPIR.ts" />
     <None Remove="ClientApp\src\app\powerline\powerline-list\powerline-list.component.ts" />
+    <None Remove="ClientApp\src\app\powerline\powerline.service.ts" />
     <None Remove="ClientApp\src\app\powerline\powerline.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +46,7 @@
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\src\app\powerline\powerline-list\powerline-list.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\powerline\powerline.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\powerline\powerline.ts" />
   </ItemGroup>
 

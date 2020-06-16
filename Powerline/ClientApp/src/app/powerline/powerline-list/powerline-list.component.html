@@ -10,7 +10,7 @@
     <tr *ngFor="let powerline of powerlines">
       <td>{{ powerline.id }}</td>
       <td>{{ powerline.name }}</td>
-      <td><a [routerLink] ="['/contractPIRForm',powerline.contractPIR.id]"> {{ powerline.contractPIR.name }}</a></td>
+      <td><a *ngIf="powerline.contractPIR" [routerLink] ="['/contractPIRForm',powerline.contractPIR.id]"> {{ powerline.contractPIR.name }}</a></td>
     </tr>
   </tbody>
 </table>
